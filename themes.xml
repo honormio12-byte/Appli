@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SitoTV" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#1A1A2E</item>
+        <item name="colorPrimaryVariant">#16213E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#E94560</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:windowBackground">#0F0F1A</item>
+        <item name="android:statusBarColor">#1A1A2E</item>
+        <item name="android:navigationBarColor">#1A1A2E</item>
+    </style>
+
+    <style name="Theme.SitoTV.Splash" parent="Theme.SitoTV">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">#0F0F1A</item>
+    </style>
+
+    <style name="NavItemText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="CardTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Dialog">
+        <item name="colorPrimary">#E94560</item>
+        <item name="android:background">#1A1A2E</item>
+    </style>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter une Playlist"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Playlist name (shared) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de la playlist"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPlaylistName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Ex: IPTV France, Sport HD..."
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Tab selector -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/bg_nav"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/tabM3uUrl"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Lien M3U"
+                android:textColor="@color/accent_red"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/tabM3uFile"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Fichier M3U"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:alpha="0.5"/>
+
+            <Button
+                android:id="@+id/tabXtream"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Xtream Codes"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:alpha="0.5"/>
+
+        </LinearLayout>
+
+        <!-- ── Tab: M3U URL ───────────────────────────────────────── -->
+        <LinearLayout
+            android:id="@+id/layoutM3uUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL M3U (http:// ou https://)"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etM3uUrl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="https://example.com/playlist.m3u"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                android:inputType="textUri"/>
+
+        </LinearLayout>
+
+        <!-- ── Tab: M3U File ──────────────────────────────────────── -->
+        <LinearLayout
+            android:id="@+id/layoutM3uFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisir un fichier .m3u / .m3u8 depuis le stockage"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnPickFile"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Parcourir les fichiers"
+                android:textSize="14sp"
+                android:backgroundTint="@color/accent_blue"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvSelectedFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent_red"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!-- ── Tab: Xtream Codes ──────────────────────────────────── -->
+        <LinearLayout
+            android:id="@+id/layoutXtream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL du serveur"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etXtreamServer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="http://server.com:8080"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                android:inputType="textUri"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom d'utilisateur"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etXtreamUser"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="username"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mot de passe"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/etXtreamPass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="password"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:background="@drawable/bg_input"
+                android:paddingHorizontal="12dp"
+                android:textSize="14sp"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <!-- Error message -->
+        <TextView
+            android:id="@+id/tvAddError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6B6B"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"/>
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/progressAdd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:indeterminateTint="@color/accent_red"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Annuler"
+                android:textColor="@color/text_secondary"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="Ajouter"
+                android:backgroundTint="@color/accent_red"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

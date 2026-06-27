@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0F0F1A</color>
+    <color name="bg_card">#1A1A2E</color>
+    <color name="bg_nav">#16213E</color>
+    <color name="accent_red">#E94560</color>
+    <color name="accent_blue">#0F3460</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0C0</color>
+    <color name="divider">#2A2A3E</color>
+    <color name="focused">#E94560</color>
+    <color name="unfocused">#3A3A5E</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#CC000000</color>
+</resources>

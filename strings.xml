@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SitoTV</string>
+    <string name="live_tv">Live TV</string>
+    <string name="movies">Films</string>
+    <string name="series">Series</string>
+    <string name="settings">Parametres</string>
+    <string name="playlists">Playlists</string>
+    <string name="add_playlist">Ajouter Playlist</string>
+    <string name="add_m3u_url">Ajouter lien M3U</string>
+    <string name="add_m3u_file">Ajouter fichier M3U</string>
+    <string name="playlist_name">Nom de la playlist</string>
+    <string name="m3u_url">Lien M3U (URL)</string>
+    <string name="enter_url">Entrez URL M3U...</string>
+    <string name="enter_name">Entrez un nom...</string>
+    <string name="add">Ajouter</string>
+    <string name="cancel">Annuler</string>
+    <string name="delete">Supprimer</string>
+    <string name="loading">Chargement...</string>
+    <string name="no_channels">Aucune chaine disponible</string>
+    <string name="search">Rechercher</string>
+    <string name="all_categories">Toutes categories</string>
+    <string name="error_loading">Erreur de chargement</string>
+    <string name="retry">Reessayer</string>
+    <string name="select_playlist">Choisir une playlist</string>
+    <string name="no_playlist">Aucune playlist. Ajoutez-en une!</string>
+    <string name="xtream_codes">Xtream Codes</string>
+    <string name="server_url">URL du serveur</string>
+    <string name="username">Nom utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="connect">Connecter</string>
+</resources>
