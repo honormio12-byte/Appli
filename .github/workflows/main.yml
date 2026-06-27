@@ -1,0 +1,4 @@
+git clone https://github.com/VOTRE_USER/SitoTV.git
+cd SitoTV
+./gradlew assembleDebug
+# APK dans : app/build/outputs/apk/debug/
